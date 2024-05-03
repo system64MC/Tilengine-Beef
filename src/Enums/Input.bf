@@ -2,9 +2,9 @@ using System;
 namespace TLN.Enums
 {
 	[AllowDuplicates]
-	public enum Input : int		   // Standard inputs query for Window.GetInput()
+	public enum Input : uint32 // Standard inputs query for Window.GetInput()
 	{
-	    None,
+		None,
 		Up,
 		Down,
 		Left,
@@ -16,8 +16,8 @@ namespace TLN.Enums
 		Button5,
 		Button6,
 		Start,
-		Quit,				   // Window close (only Player 1 keyboard)
-		CRT,				   // CRT toggle (only Player 1 keyboard)
+		Quit, // Window close (only Player 1 keyboard)
+		CRT, // CRT toggle (only Player 1 keyboard)
 		P1 = ((int)Player.P1 << 4), // Request player 1 input (default)	WARNING This may be bugged as Beef thinks this is a duplicate of None...
 		P2 = ((int)Player.P2 << 4), // Request player 2 input
 		P3 = ((int)Player.P3 << 4), // Request player 3 input

@@ -1,10 +1,11 @@
 using TLN.Enums;
 using System;
-namespace TLN.Types
+
+namespace TLN.Maps
 {
 	[CRepr, Union]
-	public struct Tile
+	public struct TilePtr
 	{
 		Tile* Tile;
-	}	// Tile reference
+	} // Tile reference
 }

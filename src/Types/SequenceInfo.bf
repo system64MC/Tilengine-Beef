@@ -1,12 +1,28 @@
 using TLN.Enums;
-using TLN.Types;
 using System;
-namespace TLN.Data
+
+namespace TLN.Animations
 {
 	[CRepr]
-	public struct SequenceInfo	// Sequence info returned by Sequence.GetInfo
+	public struct SequenceInfo // Sequence info returned by Sequence.GetInfo
 	{
-		public char32 Name;		// Sequence Name
-		public int NumFrames;	// Number of Frames
+		public char8[32] Name; // Sequence Name
+		public int32 NumFrames; // Number of Frames
+
+		public this(String name, int32 numFrames)
+		{
+			Name = .();
+			for (int i in 0 ..< Math.Min(32, name.Length))
+			{
+				Name[i] = name[i];
+			}
+			NumFrames = numFrames;
+		}
+
+		public this()
+		{
+			Name = .();
+			NumFrames = 0;
+		}
 	}
 }
