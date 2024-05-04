@@ -9,7 +9,7 @@ namespace TLN.Animations
 		public int32 Index; // Tile/Sprite index
 		public int32 Delay; // Time delay for next frame
 
-		public this(int32 index, int32 delay)
+		public this(int32 index = 0, int32 delay = 0)
 		{
 			Index = index;
 			Delay = delay;

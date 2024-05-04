@@ -11,7 +11,7 @@ namespace TLN.Animations
 		public uint8 Count; // Number of colors in the cycle
 		public uint8 Dir; // Direction: 0 = Descending, 1 = Ascending
 
-		public this(int32 delay, uint8 first, uint8 count, uint8 dir)
+		public this(int32 delay = 0, uint8 first = 0, uint8 count = 0, uint8 dir = 0)
 		{
 			Delay = delay;
 			First = first;

@@ -1,5 +1,4 @@
 using TLN.Enums;
-using TLN.Types;
 using System;
 namespace TLN.Errors
 {

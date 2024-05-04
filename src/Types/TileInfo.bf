@@ -16,5 +16,17 @@ namespace TLN.Maps
 		public uint8 Type; // Tile type
 		public bool Empty; // Cell is empty
 
+		public this(uint16 index = 0, uint16 flags = 0, int32 row = 0, int32 col = 0, int32 xOffset = 0, int32 yOffset = 0, uint8 color = 0, uint8 type = 0, bool empty = false)
+		{
+			Index = index;
+			Flags = flags;
+			Row = row;
+			Col = col;
+			Xoffset = xOffset;
+			Yoffset = yOffset;
+			Color = color;
+			Type = type;
+			Empty = empty;
+		}
 	}
 }

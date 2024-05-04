@@ -14,7 +14,7 @@ namespace TLN.Objects
 		public int32 Width; // Horizontal size
 		public int32 Height; // Vertical size
 
-		public this(uint16 id, uint16 gID, uint16 flags, int32 x, int32 y, int32 width, int32 height)
+		public this(uint16 id = 0, uint16 gID = 0, uint16 flags = 0, int32 x = 0, int32 y = 0, int32 width = 0, int32 height = 0)
 		{
 			ID = id;
 			GID = gID;
@@ -23,17 +23,6 @@ namespace TLN.Objects
 			Y = y;
 			Width = width;
 			Height = height;
-		}
-
-		public this()
-		{
-			ID = 0;
-			GID = 0;
-			Flags = 0;
-			X = 0;
-			Y = 0;
-			Width = 0;
-			Height = 0;
 		}
 	}
 }

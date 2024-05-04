@@ -9,7 +9,7 @@ namespace TLN.Animations
 		public char8[32] Name; // Sequence Name
 		public int32 NumFrames; // Number of Frames
 
-		public this(String name, int32 numFrames)
+		public this(String name = "", int32 numFrames = 0)
 		{
 			Name = .();
 			for (int i in 0 ..< Math.Min(32, name.Length))

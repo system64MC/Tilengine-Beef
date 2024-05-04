@@ -17,5 +17,19 @@ namespace TLN.Sprites
 		public int32 Index; // Graphic index inside Spriteset
 		public bool Enabled; // Enabled or not
 		public bool Collision; // Per-Pixel Collision detection enabled or not
+
+		public this(int32 x = 0, int32 y = 0, int32 width = 0, int32 height = 0, TileFlags flags = 0, Palette palette = default, Spriteset spriteset = default, int32 index = 0, bool enabled = false, bool collision = false)
+		{
+			X = (int32)x;
+			Y = (int32)y;
+			W = (int32)width;
+			H = (int32)height;
+			Flags = flags;
+			Palette = palette;
+			Spriteset = spriteset;
+			Index = (int32)index;
+			Enabled = enabled;
+			Collision = collision;
+		}
 	}
 }

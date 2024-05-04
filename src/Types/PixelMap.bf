@@ -9,7 +9,7 @@ namespace TLN.PixelMap
 		public int16 DX; // Horizontal Pixel Displacement
 		public int16 DY; // Vertical Pixel Displacement
 
-		public this(int16 dx, int16 dy)
+		public this(int16 dx = 0, int16 dy = 0)
 		{
 			DX = dx;
 			DY = dy;
